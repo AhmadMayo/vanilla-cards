@@ -49,6 +49,11 @@ function App() {
               </div>
             </div>
           )}
+          {posts.map((post) => (
+            <div className="col-small-1 col-medium-2 col-4">
+              <PostCard key={post.id} post={post} />
+            </div>
+          ))}
         </div>
       </main>
     </div>

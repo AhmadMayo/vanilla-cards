@@ -1,1 +1,32 @@
 @import "/node_modules/vanilla-framework";
+@include vanilla;
+
+:root {
+  --brand-primary: #a87ca0;
+}
+
+.l-application {
+  gap: $spv--large;
+}
+
+.p-card {
+  border-top: $spv--x-small solid var(--brand-primary) !important;
+}
+
+hr {
+  background: none;
+  position: relative;
+  margin-top: $spv--large;
+  margin-bottom: $spv--large;
+}
+hr::after {
+  content: " ";
+  position: absolute;
+  left: $spv--x-small;
+  right: $spv--x-small;
+  border-bottom: 1px $color-mid-dark dotted;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
